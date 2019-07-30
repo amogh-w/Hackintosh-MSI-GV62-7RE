@@ -2,7 +2,7 @@
 
 I have managed to successfully run Mojave 10.14.5 on my MSI GV62 7RE. Almost everything works with the included kexts and changes to config.plist provided by RehabMan. The Intel wireless module isn't supported so Wi-fi, Bluetooth and Airdrop wont work.
 
-<!--![about](#)-->
+![desktop](https://github.com/amogh-w/Hackintosh-MSI-GV62-7RE/blob/master/screenshots/desktop.png?raw=true)
 
 ## Resources:
 
@@ -19,8 +19,6 @@ I have managed to successfully run Mojave 10.14.5 on my MSI GV62 7RE. Almost eve
 1. Audio: `AppleALC.kext` with `Lilu.kext` companion
 1. Graphics: `WhateverGreen.kext` with `Lilu.kext` companion
 1. PS2 Controller: `VoodooPS2Controller.kext`
-
-<!--![desktop](#)-->
 
 ## Laptop Specific Fixes
 
