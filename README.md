@@ -1,24 +1,28 @@
 # Hackintosh MSI GV62 7RE
 
-I have managed to successfully run Mojave 10.14.5 on my MSI GV62 7RE. Almost everything works with the included kexts and changes to config.plist provided by RehabMan. The Intel wireless module isn't supported so Wi-fi, Bluetooth and Airdrop wont work.
+I have managed to successfully run Catalina 10.15.6 on my MSI GV62 7RE. Sleep is a bit wonky.
 
-![desktop](https://github.com/amogh-w/Hackintosh-MSI-GV62-7RE/blob/master/screenshots/desktop.png?raw=true)
+![opencore](https://github.com/acidanthera/OpenCorePkg/raw/master/Docs/Logos/OpenCore_with_text_Small.png)
 
 ## Resources:
 
 - [r/Hackintosh](https://www.reddit.com/r/hackintosh/) - A subreddit to learn about Hackintosh-ing
-- [Clover EFI bootloader](https://sourceforge.net/projects/cloverefiboot/) - You can get the Custom Bootloader here
-- [Laptop Install FAQ](https://www.tonymacx86.com/threads/faq-read-first-laptop-frequent-questions.164990/) - Tons of information related to get the Installer booted on your Laptop
-- [tonymacx86](https://www.tonymacx86.com/) - A community of like-minded hackintoshers
+- [OpenCore](https://github.com/acidanthera/OpenCorePkg/) - You can get the Custom Bootloader here
+- [dortania OpenCore Guide](https://dortania.github.io/OpenCore-Install-Guide/) - Best guide available on the planet
+
+![desktop](/screenshots/desktop.png)
 
 ## Kexts that I have used:
 
-0. SMC: `FakeSMC.kext`
+0. SMC: `VirtualSMC.kext`
 1. Ethernet: `AtherosE2200Ethernet.kext`
-1. USB: `USBInjectAll.kext` and `FakePCIID.kext + FakePCIID_XHCIMux.kext`
+1. USB: `USBInjectAll.kext`
 1. Audio: `AppleALC.kext` with `Lilu.kext` companion
 1. Graphics: `WhateverGreen.kext` with `Lilu.kext` companion
 1. PS2 Controller: `VoodooPS2Controller.kext`
+
+<details>
+  <summary>Unneeded Clover Fixes</summary>
 
 ## Laptop Specific Fixes
 
@@ -89,6 +93,8 @@ https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/
 [gfx0] Disable from _REG (DSDT)     graphics/graphics_REG-disable.txt
 [gfx0] Disable/Enable on _WAK/_PTS (DSDT)     graphics/graphics_PTS_WAK-disable.txt
 ```
+
+</details>
 
 ## Disclaimer
 
