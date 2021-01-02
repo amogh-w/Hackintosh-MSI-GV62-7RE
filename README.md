@@ -1,6 +1,8 @@
 # Hackintosh MSI GV62 7RE
 
-I have managed to successfully run Catalina 10.15.6 on my MSI GV62 7RE. Sleep is a bit wonky.
+I have managed to successfully run Catalina 10.15.6 on my MSI GV62 7RE with OpenCore.
+
+Note: Don't copy over my EFI and expect it to boot. Use it as a reference and build your own while referring to the dortania OpenCore Guide linked below. Have fun!
 
 ![opencore](https://github.com/acidanthera/OpenCorePkg/raw/master/Docs/Logos/OpenCore_with_text_Small.png)
 
@@ -14,12 +16,12 @@ I have managed to successfully run Catalina 10.15.6 on my MSI GV62 7RE. Sleep is
 
 ## Kexts that I have used:
 
-0. SMC: `VirtualSMC.kext`
-1. Ethernet: `AtherosE2200Ethernet.kext`
-1. USB: `USBInjectAll.kext`
-1. Audio: `AppleALC.kext` with `Lilu.kext` companion
-1. Graphics: `WhateverGreen.kext` with `Lilu.kext` companion
-1. PS2 Controller: `VoodooPS2Controller.kext`
+1. SMC: `VirtualSMC.kext`
+2. Ethernet: `AtherosE2200Ethernet.kext`
+3. USB: `USBInjectAll.kext`
+4. Audio: `AppleALC.kext` with `Lilu.kext` companion
+5. Graphics: `WhateverGreen.kext` with `Lilu.kext` companion
+6. PS2 Controller: `VoodooPS2Controller.kext`
 
 <details>
   <summary>Unneeded Clover Fixes</summary>
