@@ -1,6 +1,6 @@
 # Hackintosh MSI GV62 7RE
 
-I have managed to successfully run Catalina 10.15.6 on my MSI GV62 7RE with OpenCore.
+I have managed to successfully run Big Sur 11.1 on my MSI GV62 7RE with OpenCore.
 
 Note: Don't copy over my EFI and expect it to boot. Use it as a reference and build your own while referring to the dortania OpenCore Guide linked below. Have fun!
 
